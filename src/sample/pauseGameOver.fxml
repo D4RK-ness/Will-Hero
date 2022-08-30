@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" minWidth="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="background" blendMode="SRC_ATOP" cache="true" fitHeight="403.0" fitWidth="662.0" layoutX="-10.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Programmminggg/Java/WILLHEROXX/assets/1200336.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="12.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Programmminggg/Java/WILLHEROXX/assets/Coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nowCoin" layoutX="50.0" layoutY="14.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="11.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Programmminggg/Java/WILLHEROXX/assets/WeaponShuriken.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" alignment="CENTER" layoutX="233.0" layoutY="12.0" prefHeight="47.0" prefWidth="123.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="185.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
